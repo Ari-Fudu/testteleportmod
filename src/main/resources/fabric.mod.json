@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "teleport_only",
+  "version": "${version}",
+  "name": "Teleport Only",
+  "description": "Lets non-OP players use only /tp and /teleport.",
+  "authors": ["Example"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.teleportonly.TeleportOnlyMod"
+    ]
+  },
+  "mixins": [
+    "teleport-only.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "vanilla-permissions": "*"
+  }
+}
