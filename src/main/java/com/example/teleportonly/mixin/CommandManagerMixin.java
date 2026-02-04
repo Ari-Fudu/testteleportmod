@@ -47,7 +47,7 @@ public class CommandManagerMixin {
             return;
         }
 
-        source.sendError(Text.literal("You can only use /tp or /teleport on this server.").formatted(Formatting.RED));
+        source.sendError(Text.literal("Error: You do not have the privileges for that command!").formatted(Formatting.RED));
         cir.setReturnValue(0);
     }
 }
